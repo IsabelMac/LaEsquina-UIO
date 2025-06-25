@@ -1,0 +1,176 @@
+.contenedortarjetas {
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 15px;
+  display: grid;
+  justify-items: center; margin: 0 auto;
+  width: 50%;
+}
+
+@media (max-width: 1200px) {
+  .contenedortarjetas {
+    grid-template-columns: repeat(3, 1fr);
+    width: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+  .contenedortarjetas {
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .contenedortarjetas {
+    grid-template-columns: 1fr;
+    width: 95%;
+  }
+}
+
+.tarjeta {
+  border-radius: 3px;
+  padding: 15px;
+  text-align: center;
+  width: 200px;
+  height: 150px;
+  background-color: #81b932; 
+  color: white; 
+  position: relative;
+}
+
+.tarjeta img{
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+.tarjeta p{
+  color:#fff;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+.categorias {
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 80vh;
+  flex-direction: column;
+  justify-content: center;
+}
+.buscador{
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  margin: 10px auto;
+}
+.textoin{
+  flex: 1;
+  border-radius: 3px 0px 0px 3px;
+  height: 39px;
+  border: 1px solid #c5c5c5;
+  background: #f6f6f6;
+  color: #454545;
+  padding: 0 10px;
+}
+
+.btn{
+  color: #fff;
+  height: 39px;
+  background-color: #81b932;
+  border-radius: 0px 3px 3px 0px;
+  border: none;
+  padding: 0 15px;
+  font-size: 14px;
+}    
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.titcateg{
+  color: #81b932;
+}
+
+.ubica{
+  color: #ea522c;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 2px;
+}
+
+.detalle{
+  font-weight: 100;
+  padding: 2px;
+}
+
+.hr{
+  margin: 2px;
+}
+
+img .imgtam{
+  width: 35px;
+  text-align: center;
+}
+
+.nombrep{
+ text-align: center;
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.columnaImagen {
+  flex: 1;
+}
+
+.columnaTexto {
+  flex: 1;
+}
+
+.imgtam {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.mapaimagen{
+  width: 40%;;
+}
